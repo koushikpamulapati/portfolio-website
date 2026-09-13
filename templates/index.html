@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Koushik Portfolio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- ==========================
+         Navigation Bar
+    =========================== -->
+
+    <nav>
+
+        <div class="logo">
+            <h2>Koushik</h2>
+        </div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+    <!-- ==========================
+         Hero Section
+    =========================== -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Hi, I'm Koushik Reddy 👋</h1>
+
+            <h3>Python Full Stack Developer</h3>
+
+            <p>
+                I am passionate about Python, Web Development,
+                SQL, Machine Learning and Problem Solving.
+            </p>
+
+            <!-- JavaScript Buttons -->
+            <button id="hire-btn">Hire Me</button>
+
+            <button id="resume-btn">Download Resume</button>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile Image">
+
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- ==========================
+         About
+    =========================== -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I'm Koushik Reddy, a Computer Science Engineering student
+            passionate about Python, Web Development, SQL and Machine Learning.
+        </p>
+
+        <p>
+            My goal is to become a Python Full Stack Developer
+            and build scalable web applications.
+        </p>
+
+    </section>
+
+    <hr>
+
+    <!-- ==========================
+         Education
+    =========================== -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <h3>Saveetha School of Engineering</h3>
+
+        <p>B.E. Computer Science and Engineering</p>
+
+        <p>CGPA : 8.57</p>
+
+        <br>
+
+        <h3>Sri Chaitanya Junior College</h3>
+
+        <p>Intermediate (MPC)</p>
+
+        <p>Percentage : 94.1%</p>
+
+    </section>
+
+    <hr>
+
+    <!-- ==========================
+         Skills
+    =========================== -->
+
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-card">Python</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">Flask</div>
+            <div class="skill-card">Git</div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- ==========================
+         Projects
+    =========================== -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+
+                <h3>Forest Fire Detection</h3>
+
+                <p>
+                    Machine Learning based project for detecting
+                    forest fires using satellite imagery.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    Responsive portfolio website developed using
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- ==========================
+         Contact
+    =========================== -->
+
+ <section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p><strong>Email :</strong> koushikpamulapati123@gmail.com</p>
+
+    <p><strong>Phone :</strong> +91 8247453219</p>
+
+    <button id="email-btn">Email Me</button>
+
+
+    <h3>Send Me a Message</h3>
+
+    <form id="contact-form">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+    <!-- ==========================
+         Footer
+    =========================== -->
+
+    <footer>
+
+        <p>© 2026 Koushik Reddy. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- ==========================
+         JavaScript File
+    =========================== -->
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
